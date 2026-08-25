@@ -71,8 +71,7 @@ namespace Leb02
             bool num4 = true;
 
 
-            Console.WriteLine($"Name: {Name1}");
-            Console.WriteLine($"Hp: {Hp1}");
+            Console.WriteLine($"Name: {Name1}","Hp: {Hp1}");
             Console.WriteLine($"Speed: {speed1}");
             Console.WriteLine($"AttackPower: {AttackPower1}");
             Console.WriteLine($"IsHero {num1}");
@@ -120,8 +119,13 @@ namespace Leb02
             int HPAttacklast1 = Hp2 - AttackPower3;
             Console.WriteLine($"{Name3} Attack {AttackPower3} to {Name2}");
             Console.WriteLine($"{Name2} Hp: {HPAttacklast}");
-
-
+            int HPAttacklast3 = HPAttacklast - AttackPower2;
+            Console.WriteLine($"{Name2} Attack {AttackPower2} to {Name3}");
+            Console.WriteLine($"{Name3} Hp: {HPAttacklast3}");
+            int HPAttacklast4 = HPAttacklast1 - AttackPower3;
+            Console.WriteLine($"{Name3} Attack {AttackPower3} to {Name2}");
+            Console.WriteLine($"{Name2} Hp: {HPAttacklast4}");
+            Console.WriteLine($"===== Winner is {Name3} =====");
 
 
         }
