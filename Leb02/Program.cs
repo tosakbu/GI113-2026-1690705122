@@ -96,11 +96,11 @@ namespace Leb02
             Console.WriteLine($"IsHero {name4}");
             Console.WriteLine();
             Console.WriteLine("===== Hero VS Hero =====");
-            int HPPercent = Hp1 * 100 / maxHp;
+            int HPPercentVs1 = Hp3 - AttackPower1 / 100;
             Console.WriteLine($"Name: {Name1} VS {Name3}");
             Console.WriteLine();
             Console.WriteLine($"{Name1} Attack {AttackPower1} to {Name3}");
-            Console.WriteLine($"{Name3} Hp: ");
+            Console.WriteLine($"{Name3} Hp: {HPPercentVs1}");
             Console.WriteLine($"Name: {Name2} VS {Name4}");
             Console.WriteLine();
             Console.WriteLine();
