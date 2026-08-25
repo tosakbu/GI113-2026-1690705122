@@ -71,7 +71,8 @@ namespace Leb02
             bool num4 = true;
 
 
-            Console.WriteLine($"Name: {Name1}","Hp: {Hp1}");
+            Console.WriteLine($"Name: {Name1}");
+            Console.WriteLine($"Hp: {Hp1}");
             Console.WriteLine($"Speed: {speed1}");
             Console.WriteLine($"AttackPower: {AttackPower1}");
             Console.WriteLine($"IsHero {num1}");
