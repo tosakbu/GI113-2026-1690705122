@@ -21,7 +21,7 @@ namespace leb_03
             float attackPower = 42.5f;
             double critMultiplier = 1.75;
             bool isBoss = true;
-            Console.WriteLine("===== KIRIN SAVE CONVERTER =====");
+            Console.WriteLine("\n===== KIRIN SAVE CONVERTER =====");
             Console.WriteLine($"Name: {bossName} " +
                 $"\nRank: {rank} " +
                 $"\nLevel: {level} / {MaxLevel} " +
@@ -29,20 +29,20 @@ namespace leb_03
                 $"\nAttack Power: {attackPower} " +
                 $"\nCrit Multiplier: {critMultiplier} " +
                 $"\nIs Boss: {isBoss}");
-            Console.WriteLine("----- Implicit Conversion: HP as double -----");
+            Console.WriteLine("\n----- Implicit Conversion: HP as double -----");
             double currentHpDouble = currentHp;
-            Console.WriteLine($"\nHP (double): {currentHpDouble}");
-            Console.WriteLine("----- Exact HP Percent (no integer truncation) -----");
+            Console.WriteLine($"HP (double): {currentHpDouble}");
+            Console.WriteLine("\n----- Exact HP Percent (no integer truncation) -----");
             double hpPercentExact = currentHpDouble * 100 / maxHp;
-            Console.WriteLine($"\nHP Percent (exact): {hpPercentExact}%");
-            Console.WriteLine("----- Explicit Cast: Attack Power -> Display Int -----");
+            Console.WriteLine($"HP Percent (exact): {hpPercentExact}%");
+            Console.WriteLine("\n----- Explicit Cast: Attack Power -> Display Int -----");
             int attackDisplay = (int)attackPower;
-            Console.WriteLine($"\nAttack Power (int cast): {attackDisplay}");
-            Console.WriteLine("----- Cast vs Convert: Crit Multiplier -----");
+            Console.WriteLine($"Attack Power (int cast): {attackDisplay}");
+            Console.WriteLine("\n----- Cast vs Convert: Crit Multiplier -----");
             int critCast = (int)critMultiplier;
             int critConvert = Convert.ToInt32(critMultiplier);
-            Console.WriteLine($"\nCrit Multiplier (int cast): {critCast}");
-            Console.WriteLine($"\nCrit Multiplier (Convert rounded): {critConvert}");
+            Console.WriteLine($"Crit Multiplier (int cast): {critCast}");
+            Console.WriteLine($"Crit Multiplier (Convert rounded): {critConvert}");
 
         }
     }
